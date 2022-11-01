@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/mainHomebg"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <pl.droidsonroids.gif.GifImageView
+        android:id="@+id/bot_image"
+        android:layout_width="350dp"
+        android:layout_height="250dp"
+        android:gravity="center"
+        android:src="@drawable/bot_icon" />
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginBottom="75dp"
+        app:cardBackgroundColor="@color/cardBg"
+        app:cardCornerRadius="20dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center"
+                android:text="Hello !!"
+                android:textColor="@color/maintText"
+                android:textSize="30dp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="16dp"
+                android:gravity="center"
+                android:text="I am Your personal Chat Bot \n Ask me Anything"
+                android:textColor="@color/maintText"
+                android:textSize="16dp" />
+
+            <Button
+                android:id="@+id/firstbutton"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/start_btn_bg"
+                android:text="Start Chating"
+                android:textColor="@color/white"
+                android:textSize="20dp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+    <Button
+        android:id="@+id/darkMode"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/darkbtn"
+        android:text="Enable Dark Mode"
+        android:textColor="@color/darkBtn"
+        android:textSize="20dp" />
+
+</LinearLayout>

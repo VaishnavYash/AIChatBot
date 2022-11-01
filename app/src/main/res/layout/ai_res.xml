@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    android:layout_margin="4dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="wrap_content"
+    android:layout_width="wrap_content"
+    >
+
+        <RelativeLayout
+            android:id="@+id/message_layout"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp">
+
+                <TextView
+                    android:id="@+id/ai_msg"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:background="@drawable/ai_receive_message"
+                    android:maxWidth="250dp"
+                    android:minWidth="120dp"
+                    android:padding="8dp"
+                    android:text="Bot Message"
+                    android:textColor="@color/coneText"
+                    android:textSize="16sp" />
+
+
+        </RelativeLayout>
+</RelativeLayout>
